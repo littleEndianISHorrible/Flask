@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+</head>
+<body>
+
+    <p>Hello, World!</p>
+    <button type="button" onclick="window.location.href='{{ url_for('about') }}'">Go to About</button>
+
+    <form action="{{ url_for('user') }}" method="get">
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="text" id="data" name="data" placeholder="Data" required>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
